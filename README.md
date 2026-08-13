@@ -2,12 +2,12 @@
 
 Welcome to **The Engineer's Logbook**—a production-grade, expanding knowledge base and technical log documenting real-world developer setups, local AI implementations, and architectural lessons learned on macOS. 
 
-👉 **Live Documentation Site:** [https://github.io](https://github.io)
+👉 **Live Documentation Site:** [Visit Here](https://manjunathmi.github.io/engineers-logbook/)
 
 ---
 
 ## 🚀 Featured Playbooks Inside
-* **[Local AI Infrastructure](https://github.iolocal-ai/)**: Zero-cost local LLM setups using Apple MLX, oMLX, and Hugging Face CLI securely integrated into VS Code via the Continue extension.
+* **[Local AI Infrastructure](https://manjunathmi.github.io/engineers-logbook/local-ai/)**: Zero-cost local LLM setups using Apple MLX, oMLX, and Hugging Face CLI securely integrated into VS Code via the Continue extension.
 * **Scaling Models**: Step-by-step guides for moving from 7B light runtimes to heavy 14B/32B reasoning models like DeepSeek-R1.
 
 ---
