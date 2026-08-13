@@ -2,10 +2,17 @@ title: The Engineer's Logbook
 description: Production-grade playbooks, environment configurations, and technical lessons learned.
 theme: jekyll-remote-theme
 remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
 
 # Active client-side search engine and right-side table of contents
 search_enabled: true
 toc: true
+enable_copy_code_button: true
 
 # Navigation engine settings
 nav_sort: case_insensitive
+markdown:
+  highlight:
+    enable: true
+    options:
+      theme: monokai

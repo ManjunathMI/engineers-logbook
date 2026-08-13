@@ -1,0 +1,30 @@
+<div class="theme-switcher">
+  <label for="theme-select">Theme:</label>
+  <select id="theme-select">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+    <option value="system">System</option>
+  </select>
+</div>
+
+<script>
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  document.cookie = 'theme=' + theme + '; path=/; HttpOnly=true;';
+}
+
+// Load saved theme from cookies
+const cookie = document.cookie;
+const matches = cookie.match(/theme=([^;]+)/);
+const savedTheme = matches ? matches[1] : 'light';
+
+document.addEventListener('DOMContentLoaded', function() {
+  const select = document.getElementById('theme-select');
+  select.value = savedTheme;
+  setTheme(savedTheme);
+
+  select.addEventListener('change', function(e) {
+    setTheme(e.target.value);
+  });
+});
+</script>
