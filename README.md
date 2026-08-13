@@ -15,7 +15,7 @@ Welcome to **The Engineer's Logbook**—a production-grade, expanding knowledge 
 ## 📫 Connect & Collaborate
 I built and share these logs to help developers optimize their local workflows and bypass cloud-based limitations. If you have questions, feedback, or want to connect:
 
-* **LinkedIn:** [Manjunath's LinkedIn Profile]([https://www.linkedin.com/in/manjunath-islampure/])
+* **LinkedIn:** [Manjunath's LinkedIn Profile](https://www.linkedin.com/in/manjunath-islampure/)
 * **GitHub Portfolio:** [ManjunathMI](https://github.com/ManjunathMI)
 
 *If you find these guides useful, feel free to ⭐ star this repository or drop a message!*
