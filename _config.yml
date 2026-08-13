@@ -1,0 +1,11 @@
+title: The Engineer's Logbook
+description: Production-grade playbooks, environment configurations, and technical lessons learned.
+theme: jekyll-remote-theme
+remote_theme: just-the-docs/just-the-docs
+
+# Active client-side search engine and right-side table of contents
+search_enabled: true
+toc: true
+
+# Navigation engine settings
+nav_sort: case_insensitive
