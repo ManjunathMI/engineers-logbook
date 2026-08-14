@@ -6,8 +6,12 @@ export default defineConfig({
   site: 'https://github.io',
   integrations: [
     starlight({
-      title: "Manjunath's Logbook", // Custom top-header signature
+      title: "Engineers Logbook", // Custom top-header signature
      // 🎨 CUSTOM LOGO INTEGRATION BLOCK
+      // Forces the initial or default site preference rendering mode to dark layout 
+      defaultTheme: 'dark',
+      // Points your browser tab icon straight to your custom image asset file
+      favicon: './src/assets/mi_logo_BG_Rmvd.png',
       logo: {
         alt: "The Engineer's Logbook Brand Logo",
         src: './src/assets/mi_logo_BG_Rmvd.png', // Points directly to your image asset file
