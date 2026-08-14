@@ -1,0 +1,60 @@
+name: Deploy Manjunath's Documentation Portal
+
+on:
+  # Trigger the automation engine whenever code is pushed to your master branch
+  push:
+    branches: [master]
+  # Allows you to manually trigger the compiler from the actions dashboard screen
+  workflow_dispatch:
+
+# Grant explicit cryptographic token write keys to handle secure environment building
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent separate build operations from clashing during active pipelines
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Website Content Artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup System Node.js Environment
+        uses: actions/configure-pages@v5
+
+      - name: Install Runtime Dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install NPM Packages
+        run: npm ci
+
+      - name: Compile Astro Production Build Output
+        run: npm run build
+
+      - name: Upload Static Assets Workspace Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    name: Live Production Deployment
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish Content Layer to Live Web Endpoint
+        id: deployment
+        uses: actions/deploy-pages@v4
+
