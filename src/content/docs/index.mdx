@@ -1,9 +1,9 @@
 ---
-title: Welcome to The Enginner Logbook
+title: Welcome to The Logbook
 description: Production-grade playbooks, environment configurations, and technical lessons learned.
 template: splash
 hero:
-  tagline: Production-grade playbooks, Environment Configurations, and Technical Lessons Learned.
+  tagline: Production-grade playbooks, environment configurations, and technical lessons learned.
   image:
     file: ../../assets/mi_logo_BG_Rmvd.png
   actions:
@@ -34,53 +34,34 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
   </Card>
 </CardGrid>
 <style global>{`
-  /* 1. TOP HEADER NAVIGATION TITLE (Manjunath's Logbook) */
+  /* Target the Starlight site title header natively */
   a.site-title {
     font-size: 1.55rem !important;
     font-weight: 700 !important;
-    font-family: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace !important;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
     letter-spacing: -0.03em !important;
     
+    /* Mirror the exact purple-to-cyan neon fading values of your logo */
     background: linear-gradient(
       135deg, 
-      #7b2cbf 0%,    
-      #3a86ff 50%,   
-      #00f5d4 100%   
+      #7b2cbf 0%,    /* Deep Purple */
+      #3a86ff 50%,   /* Neon Blue */
+      #00f5d4 100%   /* Circuit Cyan */
     ) !important;
     
+    /* Clip the gradient background to the text contours */
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     color: transparent !important;
     
+    /* Add a premium neon depth drop-glow */
     filter: drop-shadow(0 2px 8px rgba(58, 134, 255, 0.25)) !important;
     transition: filter 0.3s ease !important;
   }
 
+  /* Intensify neon glow on hover actions */
   a.site-title:hover {
     filter: drop-shadow(0 2px 12px rgba(0, 245, 212, 0.5)) !important;
-  }
-
-  /* 2. MAIN SECTION LANDING TITLE (Welcome to The Logbook) */
-  .hero-text h1 {
-    font-size: 3rem !important; 
-    font-weight: 800 !important;
-    font-family: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace !important;
-    letter-spacing: -0.04em !important;
-    line-height: 1.2 !important;
-    
-    background: linear-gradient(
-      90deg, 
-      #7b2cbf 10%,   
-      #3a86ff 60%,   
-      #00f5d4 100%   
-    ) !important;
-    
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    color: transparent !important;
-    
-    filter: drop-shadow(0 4px 12px rgba(58, 134, 255, 0.15)) !important;
   }
 `}</style>
