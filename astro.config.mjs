@@ -12,6 +12,10 @@ export default defineConfig({
         alt: "The Engineer's Logbook Brand Logo",
         src: './src/assets/mi_logo_BG_Rmvd.png', // Points directly to your image asset file
       },
+      // 🔌 OVERRIDE COMPONENT LAYOUT CORE
+      components: {
+        Footer: './src/components/Footer.astro', // Swaps the footer on every page
+      },
 	  social: [
         { label: 'GitHub', icon: 'github', href: 'https://github.com/ManjunathMI/' },
         { label: 'LinkedIn', icon: 'linkedin', href: 'https://www.linkedin.com/in/manjunath-islampure/' }

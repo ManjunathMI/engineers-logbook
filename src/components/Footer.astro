@@ -1,0 +1,98 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+
+// Get current year automatically
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="custom-footer">
+  <div class="footer-grid">
+    <!-- Section 1: Call to Action -->
+    <div class="footer-section">
+      <h4>💡 Have Queries or Feedback?</h4>
+      <p>If you're testing these local model runtimes or ran into environment path glitches, let's connect!</p>
+      <a href="https://www.linkedin.com/in/manjunath-islampure/" target="_blank" rel="noopener noreferrer" class="ln-link">
+        Reach out on LinkedIn →
+      </a>
+    </div>
+
+    <!-- Section 2: Visitor Live Matrix -->
+    <div class="footer-section metrics-section">
+      <h4>📊 Traffic & Metrics</h4>
+      <p>Logbook Unique Visitors:</p>
+      <!-- Premium, zero-config live SVG hits counter matching your dark mode theme variables -->
+      <img src="https://scruid.com" alt="Visitor Count" class="counter-badge" />
+    </div>
+  </div>
+
+  <!-- Bottom Bar: Metadata Legal Assets -->
+  <div class="footer-bottom">
+    <p>&copy; {currentYear} Manjunath Islampure. Code licensed under MIT.</p>
+    <div class="footer-legal-links">
+      <a href="/engineers-logbook/privacy/">Privacy Policy</a>
+      <span class="divider">•</span>
+      <a href="https://github.com/ManjunathMI/" target="_blank" rel="noopener noreferrer">Credits & Source</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .custom-footer {
+    border-top: 1px solid var(--sl-color-gray-5);
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-section h4 {
+    color: var(--sl-color-white) !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .footer-section p {
+    color: var(--sl-color-gray-3);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+  .ln-link {
+    color: var(--sl-color-accent) !important;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .ln-link:hover {
+    text-decoration: underline;
+  }
+  .counter-badge {
+    margin-top: 0.25rem;
+    height: 24px;
+    border-radius: 4px;
+  }
+  .footer-bottom {
+    border-top: 1px solid var(--sl-color-gray-6);
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-4);
+  }
+  .footer-legal-links a {
+    color: var(--sl-color-gray-3) !important;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  .footer-legal-links a:hover {
+    color: var(--sl-color-accent) !important;
+  }
+  .divider {
+    color: var(--sl-color-gray-5);
+  }
+</style>
+
