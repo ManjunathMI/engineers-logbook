@@ -1,26 +1,30 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
-				},
-			],
-		}),
-	],
+  base: '/engineers-logbook/', // Maps cleanly to your public live GitHub Pages path
+  site: 'https://github.io',
+  integrations: [
+    starlight({
+      title: "Manjunath's Logbook", // Custom top-header signature
+     // 🎨 CUSTOM LOGO INTEGRATION BLOCK
+      logo: {
+        alt: "The Engineer's Logbook Brand Logo",
+        src: './src/assets/mi_logo_BG_Rmvd.png', // Points directly to your image asset file
+      },
+	  social: [
+        { label: 'GitHub', icon: 'github', href: 'https://github.com/ManjunathMI/' },
+        { label: 'LinkedIn', icon: 'linkedin', href: 'https://www.linkedin.com/in/manjunath-islampure/' }
+      ],
+      sidebar: [
+        {
+          label: 'Local AI Playbooks',
+          items: [
+            { label: 'oMLX & VS Code Setup', link: '/local-ai/omlx-setup/' },
+            { label: 'DeepSeek-R1 & Scaling', link: '/local-ai/deepseek-guide/' },
+          ],
+        },
+      ],
+    }),
+  ],
 });
