@@ -6,6 +6,26 @@
 </head>
 <body>
   <div class="theme-switcher"></div>
-  <!-- Your content here -->
+<!-- Theme Controller Component -->
+<div style="padding: 16px; border-bottom: 1px solid var(--card-border);">
+  <button id="theme-toggle" class="theme-toggle-btn">🌓 Toggle Mode</button>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+
+  // Apply default state instantly on page mount
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  toggleBtn.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+    let newTheme = theme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+</script>
+
 </body>
 </html>
