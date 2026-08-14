@@ -1,4 +1,4 @@
-"body {
+body {
   background-color: var(--primary-bg);
   color: var(--primary-text);
 }
@@ -6,4 +6,3 @@
 pre {
   background-color: var(--secondary-bg);
 }
-"
