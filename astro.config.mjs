@@ -8,8 +8,6 @@ export default defineConfig({
     starlight({
       title: "Engineers Logbook", // Custom top-header signature
      // 🎨 CUSTOM LOGO INTEGRATION BLOCK
-      // Forces the initial or default site preference rendering mode to dark layout 
-      defaultTheme: 'dark',
       // Points your browser tab icon straight to your custom image asset file
       favicon: './src/assets/mi_logo_BG_Rmvd.png',
       logo: {

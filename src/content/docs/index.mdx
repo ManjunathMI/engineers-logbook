@@ -1,5 +1,5 @@
 ---
-title: Welcome to The Logbook
+title: Welcome to Engineers Logbook
 description: Production-grade playbooks, environment configurations, and technical lessons learned.
 template: splash
 hero:
@@ -33,15 +33,17 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     Scrubbing conflicting global Node.js/Python binary pathways and aligning runtime links with **Homebrew** and **Pipx**.
   </Card>
 </CardGrid>
+
 <style global>{`
-  /* Target the Starlight site title header natively */
+  /* ========================================================= */
+  /* 1. NAVBAR LOGO TITLE (Manjunath's Logbook)                */
+  /* ========================================================= */
   a.site-title {
     font-size: 1.55rem !important;
     font-weight: 700 !important;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace !important;
     letter-spacing: -0.03em !important;
     
-    /* Mirror the exact purple-to-cyan neon fading values of your logo */
     background: linear-gradient(
       135deg, 
       #7b2cbf 0%,    /* Deep Purple */
@@ -49,19 +51,41 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
       #00f5d4 100%   /* Circuit Cyan */
     ) !important;
     
-    /* Clip the gradient background to the text contours */
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     background-clip: text !important;
     color: transparent !important;
     
-    /* Add a premium neon depth drop-glow */
     filter: drop-shadow(0 2px 8px rgba(58, 134, 255, 0.25)) !important;
     transition: filter 0.3s ease !important;
   }
 
-  /* Intensify neon glow on hover actions */
   a.site-title:hover {
     filter: drop-shadow(0 2px 12px rgba(0, 245, 212, 0.5)) !important;
+  }
+
+  /* ========================================================= */
+  /* 2. MAIN SECTION LANDING TITLE (Welcome to The Logbook)    */
+  /* ========================================================= */
+  .hero-text h1 {
+    font-size: 3.2rem !important; 
+    font-weight: 800 !important;
+    font-family: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, monospace !important;
+    letter-spacing: -0.04em !important;
+    line-height: 1.15 !important;
+    
+    background: linear-gradient(
+      90deg, 
+      #7b2cbf 5%,    /* Purple start */
+      #3a86ff 55%,   /* Deep Blue transition */
+      #00f5d4 100%   /* Vibrant Cyan end */
+    ) !important;
+    
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    
+    filter: drop-shadow(0 4px 12px rgba(58, 134, 255, 0.15)) !important;
   }
 `}</style>
