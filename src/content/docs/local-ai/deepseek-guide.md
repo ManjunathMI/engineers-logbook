@@ -5,7 +5,7 @@ parent: Local AI Infrastructure
 nav_order: 2
 ---
 
-# DeepSeek R1 & Upgrading to Higher Version LLMs Locally
+## DeepSeek R1 & Upgrading to Higher Version LLMs Locally
 
 Once your local AI infrastructure is built using oMLX, you are no longer constrained by the capabilities of a single small model. When a cutting-edge reasoning model drops, you can instantly scale up your machine's capabilities without waiting for corporate API access.
 

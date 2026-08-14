@@ -5,7 +5,7 @@ parent: Local AI Infrastructure
 nav_order: 1
 ---
 
-# The Complete Local AI Playbook: Running oMLX & Integrating with VS Code
+## The Complete Local AI Playbook: Running oMLX & Integrating with VS Code
 
 If you are an active developer or student, you have likely hit a frustrating wall: **token exhaustion**. Whether you maxed out your GitHub Copilot limits, hit rate caps on commercial APIs, or want to avoid recurring monthly subscriptions for tools like Claude or OpenAI, running a local Large Language Model (LLM) is the ultimate developer superpower. 
 
