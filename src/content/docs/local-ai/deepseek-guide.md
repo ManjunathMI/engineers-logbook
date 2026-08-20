@@ -1,11 +1,12 @@
 ---
 layout: default
-title: DeepSeek R1 & Scaling Models
+title: How to Upgrade and Scale Local LLMs to DeepSeek-R1 14B on macOS 
+description: "A step-by-step engineering guide by Manjunath Islampure on installing, scaling, and configuring DeepSeek-R1 14B reasoning models locally via Apple MLX and Continue."
 parent: Local AI Infrastructure
 nav_order: 2
 ---
 
-## DeepSeek R1 & Upgrading to Higher Version LLMs Locally
+*By **Manjunath Islampure** • Verified Production Playbook*
 
 Once your local AI infrastructure is built using oMLX, you are no longer constrained by the capabilities of a single small model. When a cutting-edge reasoning model drops, you can instantly scale up your machine's capabilities without waiting for corporate API access.
 
@@ -18,7 +19,7 @@ Unlike standard instruction models that provide immediate text outputs, DeepSeek
 
 ---
 
-## 📥 Step 1: Pulling down a Higher Parameter Model
+## 📥 Step 1: How to Download DeepSeek-R1 14B from Hugging Face via CLI
 Because your Hugging Face and environment paths are globally configured via Pipx and Homebrew, you can pull down a larger 14-Billion parameter quantized model with a single command:
 
 ```zsh
@@ -43,6 +44,15 @@ Simply append the new model layout as an independent block under your existing a
       - edit
 ```
 Once saved, the option to swap between the Qwen code completion model and the DeepSeek deep reasoning engine appears instantly in your VS Code sidebar selector.
+
+---
+### Apple Silicon Memory Requirements for Local DeepSeek-R1
+
+| Model Variant | Minimum Unified Memory (RAM) | Recommended Apple Mac Hardware |
+| :--- | :--- | :--- |
+| **DeepSeek-R1 Distill 7B** | 8 GB - 16 GB | Base M1 / M2 / M3 / M4 MacBook |
+| **DeepSeek-R1 Distill 14B** | 16 GB - 24 GB | M-Series Pro Chips (MacBook Pro) |
+| **DeepSeek-R1 Distill 32B** | 32 GB+ | M-Series Max / Ultra (Studio/Pro) |
 
 ---
 

@@ -1,14 +1,13 @@
 ---
-title: Welcome to Engineers Logbook
-description: Production-grade playbooks, environment configurations, and technical lessons learned.
+title: "Manjunath Islampure | The Engineer's Logbook"
+description: "Production-grade engineering playbooks, environment configurations, and local AI infrastructure guides curated by Manjunath Islampure."
 template: splash
 hero:
-  tagline: Production-grade playbooks, environment configurations, and technical lessons learned.
+  tagline: "Production-grade playbooks, environment configurations, and technical execution strategies by Manjunath Islampure."
   image:
     file: ../../assets/mi_logo_BG_Rmvd.png
   actions:
     - text: Explore Local AI Playbooks
-      # Fixed: Included the mandatory repository sub-folder prefix path
       link: /engineers-logbook/local-ai/omlx-setup/
       icon: right-arrow
       variant: primary
@@ -29,11 +28,14 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     
     [Open Scaling Playbook →](/engineers-logbook/local-ai/deepseek-guide/)
   </Card>
-  <Card title="Systems Engineering" icon="pencil">
-    Scrubbing conflicting global Node.js/Python binary pathways and aligning runtime links with **Homebrew** and **Pipx**.
+  <Card title="Hardware Optimization" icon="sun">
+    A comprehensive evaluation of Apple Silicon Unified Memory setups, dynamic VRAM thresholds, and model parameter quantization selection.
+    
+    [Open Hardware Matrix →](/engineers-logbook/local-ai/finetune-omlx/)
   </Card>
 </CardGrid>
-<style global>{`
+
+<style>{`
   /* ========================================================= */
   /* 1. NAVBAR LOGO TITLE (Manjunath's Logbook)                */
   /* ========================================================= */
@@ -91,7 +93,6 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
   /* ========================================================= */
   /* 3. PLAYBOOK HEADINGS & DEEP-DIVE MAIN PAGE TITLES         */
   /* ========================================================= */
-  /* Fixed: Targets the inner headings AND the main page title panels on content pages */
   .sl-markdown-content h1,
   .sl-markdown-content h2,
   .content-panel h1, 
