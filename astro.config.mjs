@@ -22,10 +22,14 @@ export default defineConfig({
         { label: 'GitHub', icon: 'github', href: 'https://github.com/ManjunathMI/' },
         { label: 'LinkedIn', icon: 'linkedin', href: 'https://www.linkedin.com/in/manjunath-islampure/' }
       ],
+      links: [
+          { label: 'About', icon: 'seti:makefile', link: '/about/' }
+      ],
       sidebar: [
         {
           label: 'Local AI Playbooks',
           items: [
+            { label: 'About', link: '/about/' },
             { label: 'oMLX & VS Code Setup', link: '/local-ai/omlx-setup/' },
             { label: 'DeepSeek-R1 & Scaling', link: '/local-ai/deepseek-guide/' },
           ],

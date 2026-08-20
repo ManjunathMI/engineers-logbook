@@ -63,7 +63,7 @@ omlx start
 
 ### 📊 The Local Web UI
 Once started, open your web browser and navigate to:
-👉 **`http://127.0.0`**
+👉 **`http://127.0.0.1:8000/admin/dashboard`**
 
 Inside this dashboard, you can view your active locally downloaded models, monitor your unified memory utilization, check logs, and **copy the securely generated oMLX API Key** required to link your local server endpoint to external applications like VS Code.
 
