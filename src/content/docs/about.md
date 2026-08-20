@@ -1,6 +1,7 @@
 ---
 title: About
-description: The person behind Engineers Logbook — Manjunath Islampure, Software Delivery Head, engineer, learner, and storyteller.
+description: The person behind Engineers Logbook — Engineer by Trade. Leader by Choice. AI Learner by Curiosity.
+tableOfContents: false
 ---
 
 > *"It's not just the destination that matters — the journey shapes everything you become."*
@@ -9,7 +10,7 @@ description: The person behind Engineers Logbook — Manjunath Islampure, Softwa
 
 ## Hey, I'm Manjunath 👋
 
-Engineer by profession. Learner by nature. Storyteller at heart.
+Engineer by Trade. Leader by Choice. AI Learner by Curiosity.
 
 I've spent nearly **16 years** building software and leading engineering teams — from writing my first Java modules in Bengaluru to leading a 30+ member engineering organization and driving 5G platform engineering for millions of Verizon customers across the United States.
 
