@@ -18,7 +18,7 @@ export default defineConfig({
       social: [
         { label: 'GitHub', icon: 'github', href: 'https://github.com/ManjunathMI/' },
         { label: 'LinkedIn', icon: 'linkedin', href: 'https://www.linkedin.com/in/manjunath-islampure/' },
-        { label: '👤 About', link: '/about/' },
+        { label: '👤 About', icon: 'seti:makefile', link: '/about/' },
       ],
       sidebar: [
         // ✅ About sits at top level, outside any group
