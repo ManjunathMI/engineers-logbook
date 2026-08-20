@@ -4,8 +4,6 @@ description: "A production-grade engineering playbook by Manjunath Islampure on 
 nav_order: 3
 ---
 
-# MacBook Apple Silicon Local AI Hardware & Performance Tuning Matrix
-
 *By **Manjunath Islampure** • Verified Hardware & Performance Optimization Playbook*
 
 When running Local AI via **oMLX**, the ultimate execution bottleneck is not your CPU core layer or GPU core counts—it is your **Unified Memory (RAM)**. Because Apple Silicon shares a single high-bandwidth memory pool between your operating system, active developer applications, and graphics processors, incorrect server flags will instantly force your machine into heavy SSD swap files, grinding your system to a halt.
