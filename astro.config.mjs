@@ -56,6 +56,15 @@ export default defineConfig({
             { label: 'Hardware Optimization', link: 'local-ai/finetune-omlx' },
           ],
         },
+        {
+          label: '🏗️ Web Engineering & SEO',
+          items: [
+            { label: 'Why Developers Need a Personal Site', link: 'web-eng/the-digital-home' },
+            { label: 'The Zero-Budget SEO Blueprint', link: 'web-eng/zero-budget-traffic' },
+            { label: 'Technical SEO Best Practices', link: 'web-eng/seo-best-practices' },
+            { label: 'Git & Deployment Glitches', link: 'web-eng/git-deployment-glitches' },
+          ],
+        },
       ],
     }),
     sitemap(), // Generates sitemap-index.xml for Google Search Console discovery
