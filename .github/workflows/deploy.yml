@@ -26,17 +26,20 @@ jobs:
       - name: Checkout Project Source Code
         uses: actions/checkout@v4
 
-      - name: Setup System Node.js Environment
+      - name: Configure GitHub Pages Routing environment
         uses: actions/configure-pages@v5
 
-      - name: Install Runtime Dependencies
+      - name: Initialize Isolated Node.js LTS Environment
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - name: Install NPM Packages
+      - name: Clean Install NPM Packages (Production Locked)
         run: npm ci
+
+      - name: Clear Legacy Artifacts (Prevent Stale Cache Build)
+        run: rm -rf ./dist
 
       - name: Compile Astro Production Build Output
         run: npm run build
@@ -57,4 +60,3 @@ jobs:
       - name: Publish Content Layer to Live Web Endpoint
         id: deployment
         uses: actions/deploy-pages@v4
-
