@@ -47,13 +47,13 @@ export default defineConfig({
       ],
       sidebar: [
         // ✅ About sits at top level, outside any group
-        { label: '👤 About', link: '/about/' },
+        { label: '👤 About', link: 'about' },
         {
           label: 'Local AI Playbooks',
           items: [
-            { label: 'oMLX & VS Code Setup', link: '/local-ai/omlx-setup/' },
-            { label: 'DeepSeek-R1 & Scaling', link: '/local-ai/deepseek-guide/' },
-            { label: 'Hardware Optimization', link: '/local-ai/finetune-omlx/' },
+            { label: 'oMLX & VS Code Setup', link: 'local-ai/omlx-setup' },
+            { label: 'DeepSeek-R1 & Scaling', link: 'local-ai/deepseek-guide' },
+            { label: 'Hardware Optimization', link: 'local-ai/finetune-omlx' },
           ],
         },
       ],
