@@ -27,7 +27,15 @@ export default defineConfig({
             document.documentElement.dataset.theme = localStorage.getItem('starlight-theme') || 'dark';
           `,
           attrs: { is: 'inline' }
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            name: 'google-site-verification',
+            content: 'UeDx17XI0CQx6xcTRKZe2uLZgWhsUGjFNaRWIRGvdlc'
+          }
         }
+
       ],
       components: {
         Footer: './src/components/Footer.astro',
